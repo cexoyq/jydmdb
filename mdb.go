@@ -77,7 +77,7 @@ func main() {
 	csql = `insert into treeinfolocal(id,Caption,parentid,loginacc,loginpsd,
 			dvsip,dvsport,dvschannel,dvslinkmode)  
 			select id,Caption,parentid,loginacc,loginpsd,
-			dvsip,dvsport,dvschannel,dvslinkmode from treeinfo in 'd:\\1.mdb' `;
+			dvsip,dvsport,dvschannel,dvslinkmode from treeinfo in 'cfg-3.37.mdb' `;
 		/*复制到已有的表中dvslinkmode=0,selfdvskind='DVS',sipnodekind='EU'
 		insert into tableB IN '" & toDBFile & "' select * FROM tableA where userName='abc*/
 	/*db,err = sql.Open("odbc","driver={Microsoft Access Driver (*.mdb)};dbq=d:\\1.mdb");
